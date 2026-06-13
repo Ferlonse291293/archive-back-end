@@ -1,0 +1,30 @@
+{
+  "permissions": [
+    "clients.clientDocuments.view",
+    "clients.clientDocuments.create",
+    "clients.clientDocuments.edit",
+    "clients.clientDocuments.delete",
+
+    "clients.clientDocuments.components.uploadDocument",
+    "clients.clientDocuments.components.downloadDocument",
+    "clients.clientDocuments.components.documentHistory",
+
+    "clients.clientsSearch.view",
+
+    "clients.clientsSearch.components.filters",
+    "clients.clientsSearch.components.advancedSearch",
+    "clients.clientsSearch.components.export",
+
+    "documents.list.view",
+    "documents.list.create",
+    "documents.list.delete",
+
+    "documents.list.components.bulkActions",
+    "documents.list.components.tags",
+
+    "analytics.dashboard.view",
+
+    "analytics.dashboard.components.charts",
+    "analytics.dashboard.components.export"
+  ]
+}

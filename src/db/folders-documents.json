@@ -1,0 +1,177 @@
+[
+  {
+    "id": "kyc",
+    "name": "KYC Legal File",
+    "parentFolderId": "root"
+  },
+  {
+    "id": "kyc-identification",
+    "name": "Identification",
+    "parentFolderId": "kyc"
+  },
+  {
+    "id": "kyc-identification-documents",
+    "name": "Identification Documents",
+    "parentFolderId": "kyc-identification"
+  },
+  {
+    "id": "kyc-identification-passport",
+    "name": "Passport",
+    "parentFolderId": "kyc-identification-documents"
+  },
+  {
+    "id": "kyc-identification-id-card",
+    "name": "ID Card",
+    "parentFolderId": "kyc-identification-documents"
+  },
+  {
+    "id": "kyc-identification-international-passport",
+    "name": "International Passport",
+    "parentFolderId": "kyc-identification-documents"
+  },
+  {
+    "id": "kyc-identification-driver-license",
+    "name": "Driver License",
+    "parentFolderId": "kyc-identification-documents"
+  },
+  {
+    "id": "kyc-identification-residence-permit",
+    "name": "Residence Permit",
+    "parentFolderId": "kyc-identification-documents"
+  },
+  {
+    "id": "kyc-video-identification",
+    "name": "Video Identification",
+    "parentFolderId": "kyc-identification"
+  },
+  {
+    "id": "kyc-address-verification",
+    "name": "Address Verification",
+    "parentFolderId": "kyc-identification"
+  },
+  {
+    "id": "kyc-tax-residency",
+    "name": "Tax Residency",
+    "parentFolderId": "kyc-identification"
+  },
+  {
+    "id": "kyc-sanctions-checks",
+    "name": "Sanctions Checks",
+    "parentFolderId": "kyc-identification"
+  },
+  {
+    "id": "kyc-biometric-data",
+    "name": "Biometric Data",
+    "parentFolderId": "kyc-identification"
+  },
+  {
+    "id": "kyc-questionnaire",
+    "name": "KYC Questionnaire",
+    "parentFolderId": "kyc"
+  },
+  {
+    "id": "kyc-fatca-crs",
+    "name": "FATCA / CRS Documents",
+    "parentFolderId": "kyc"
+  },
+  {
+    "id": "kyc-client-relations",
+    "name": "Client Relations",
+    "parentFolderId": "kyc"
+  },
+  {
+    "id": "kyc-master-agreement",
+    "name": "Master Agreement",
+    "parentFolderId": "kyc"
+  },
+  {
+    "id": "kyc-individual-terms",
+    "name": "Individual Terms",
+    "parentFolderId": "kyc"
+  },
+  {
+    "id": "kyc-certificates-other",
+    "name": "Certificates and Other Documents",
+    "parentFolderId": "kyc"
+  },
+  {
+    "id": "kyc-client-communications",
+    "name": "Client Communications",
+    "parentFolderId": "kyc"
+  },
+  {
+    "id": "kyc-client-communications-emails",
+    "name": "Emails",
+    "parentFolderId": "kyc-client-communications"
+  },
+  {
+    "id": "kyc-client-communications-phone-calls",
+    "name": "Phone Calls",
+    "parentFolderId": "kyc-client-communications"
+  },
+  {
+    "id": "kyc-client-communications-chat-history",
+    "name": "Chat History",
+    "parentFolderId": "kyc-client-communications"
+  },
+  {
+    "id": "kyc-aml-compliance",
+    "name": "AML / Compliance",
+    "parentFolderId": "kyc"
+  },
+  {
+    "id": "kyc-archive",
+    "name": "Archive",
+    "parentFolderId": "kyc"
+  },
+  {
+    "id": "kyc-archive-expired-documents",
+    "name": "Expired Documents",
+    "parentFolderId": "kyc-archive"
+  },
+  {
+    "id": "kyc-archive-revoked-documents",
+    "name": "Revoked Documents",
+    "parentFolderId": "kyc-archive"
+  },
+  {
+    "id": "kyc-archive-contracts",
+    "name": "Archived Contracts",
+    "parentFolderId": "kyc-archive"
+  },
+  {
+    "id": "kyc-archive-old-passports",
+    "name": "Old Passports",
+    "parentFolderId": "kyc-archive"
+  },
+  {
+    "id": "passive-products",
+    "name": "Passive Products",
+    "parentFolderId": "kyc"
+  },
+  {
+    "id": "passive-products-deposits",
+    "name": "Deposits",
+    "parentFolderId": "passive-products"
+  },
+  {
+    "id": "passive-products-current-accounts",
+    "name": "Current Accounts",
+    "parentFolderId": "passive-products"
+  },
+  {
+    "id": "passive-products-current-accounts-statements",
+    "name": "Account Statements",
+    "parentFolderId": "passive-products-current-accounts"
+  },
+  {
+    "id": "passive-products-cards",
+    "name": "Card Products",
+    "parentFolderId": "passive-products"
+  },
+  {
+    "id": "passive-products-interest-accruals",
+    "name": "Interest Accruals",
+    "parentFolderId": "passive-products"
+  }
+]

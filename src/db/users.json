@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "username": "alex_volkov",
+    "email": "alex.volkov@example.com",
+    "password": "Passw0rd!A1",
+    "role": "user"
+  },
+  {
+    "id": 2,
+    "username": "maria_ivanova",
+    "email": "maria.ivanova@example.com",
+    "password": "Qwerty#2026",
+    "role": "admin"
+  },
+  {
+    "id": 3,
+    "username": "sergey_petrov",
+    "email": "sergey.petrov@example.com",
+    "password": "Sergey@1234",
+    "role": "user"
+  },
+  {
+    "id": 4,
+    "username": "olga_smirnova",
+    "email": "olga.smirnova@example.com",
+    "password": "Olga$Pass88",
+    "role": "moderator"
+  },
+  {
+    "id": 5,
+    "username": "dmitry_kuznetsov",
+    "email": "dmitry.kuznetsov@example.com",
+    "password": "Dima!2026",
+    "role": "user"
+  },
+  {
+    "id": 6,
+    "username": "anna_popova",
+    "email": "anna.popova@example.com",
+    "password": "Anna@Secure7",
+    "role": "user"
+  },
+  {
+    "id": 7,
+    "username": "ivan_sidorov",
+    "email": "ivan.sidorov@example.com",
+    "password": "Ivan#Login9",
+    "role": "admin"
+  },
+  {
+    "id": 8,
+    "username": "ekaterina_fedorova",
+    "email": "ekaterina.fedorova@example.com",
+    "password": "Katya*2026",
+    "role": "user"
+  },
+  {
+    "id": 9,
+    "username": "nikita_orlov",
+    "email": "nikita.orlov@example.com",
+    "password": "Nikita$Pass1",
+    "role": "user"
+  },
+  {
+    "id": 10,
+    "username": "victoria_lebedeva",
+    "email": "victoria.lebedeva@example.com",
+    "password": "Vic!Secure22",
+    "role": "moderator"
+  }
+]

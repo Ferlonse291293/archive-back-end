@@ -1,0 +1,312 @@
+[
+  {
+    "documentId": "doc-passport-front-v1",
+    "clientId": "CLI-10000",
+    "title": "Passport Front v1",
+    "status": "ACTIVE",
+    "createdAt": 1714561200000,
+    "updatedAt": 1714564800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-001", "fileName": "passport-front.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-passport-front-v2",
+    "clientId": "CLI-10000",
+    "title": "Passport Front v2",
+    "status": "ACTIVE",
+    "createdAt": 1717243200000,
+    "updatedAt": 1717246800000,
+    "metadata": { "version": 2, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-002", "fileName": "passport-front-v2.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-passport-back",
+    "clientId": "CLI-10000",
+    "title": "Passport Back",
+    "status": "ACTIVE",
+    "createdAt": 1717333200000,
+    "updatedAt": 1717336800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-003", "fileName": "passport-back.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-id-card-front",
+    "clientId": "CLI-10000",
+    "title": "ID Card Front",
+    "status": "ACTIVE",
+    "createdAt": 1717423200000,
+    "updatedAt": 1717426800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-004", "fileName": "id-card-front.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-driver-license",
+    "clientId": "CLI-10000",
+    "title": "Driver License",
+    "status": "ACTIVE",
+    "createdAt": 1717513200000,
+    "updatedAt": 1717516800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-005", "fileName": "driver-license.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-selfie-photo",
+    "clientId": "CLI-10000",
+    "title": "Selfie Photo",
+    "status": "ACTIVE",
+    "createdAt": 1717603200000,
+    "updatedAt": 1717606800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-006", "fileName": "selfie.jpg", "mineType": "image/jpeg" }]
+  },
+  {
+    "documentId": "doc-selfie-video",
+    "clientId": "CLI-10000",
+    "title": "Selfie Video",
+    "status": "ACTIVE",
+    "createdAt": 1717693200000,
+    "updatedAt": 1717696800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-007", "fileName": "selfie-video.mp4", "mineType": "video/mp4" }]
+  },
+  {
+    "documentId": "doc-face-match-report",
+    "clientId": "CLI-10000",
+    "title": "Face Match Report",
+    "status": "ACTIVE",
+    "createdAt": 1717783200000,
+    "updatedAt": 1717786800000,
+    "metadata": { "version": 2, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-008", "fileName": "face-match-report.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-utility-bill",
+    "clientId": "CLI-10000",
+    "title": "Utility Bill",
+    "status": "ACTIVE",
+    "createdAt": 1717873200000,
+    "updatedAt": 1717876800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-009", "fileName": "utility-bill.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-rental-agreement",
+    "clientId": "CLI-10000",
+    "title": "Rental Agreement",
+    "status": "ACTIVE",
+    "createdAt": 1717963200000,
+    "updatedAt": 1717966800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-010", "fileName": "rental-agreement.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-tax-number",
+    "clientId": "CLI-10000",
+    "title": "Tax Number",
+    "status": "ACTIVE",
+    "createdAt": 1718053200000,
+    "updatedAt": 1718056800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-011", "fileName": "tax-number.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-crs-form",
+    "clientId": "CLI-10000",
+    "title": "CRS Form",
+    "status": "ACTIVE",
+    "createdAt": 1718143200000,
+    "updatedAt": 1718146800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-012", "fileName": "crs-form.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-sanctions-check",
+    "clientId": "CLI-10000",
+    "title": "Sanctions Check",
+    "status": "ACTIVE",
+    "createdAt": 1718233200000,
+    "updatedAt": 1718236800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-013", "fileName": "sanctions-check.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-pep-check",
+    "clientId": "CLI-10000",
+    "title": "PEP Check",
+    "status": "ACTIVE",
+    "createdAt": 1718323200000,
+    "updatedAt": 1718326800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-014", "fileName": "pep-check.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-biometric-template",
+    "clientId": "CLI-10000",
+    "title": "Biometric Template",
+    "status": "ACTIVE",
+    "createdAt": 1718413200000,
+    "updatedAt": 1718416800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-015", "fileName": "biometric-template.dat", "mineType": "application/octet-stream" }]
+  },
+  {
+    "documentId": "doc-questionnaire-v1",
+    "clientId": "CLI-10000",
+    "title": "Customer Questionnaire v1",
+    "status": "ACTIVE",
+    "createdAt": 1718503200000,
+    "updatedAt": 1718506800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-016", "fileName": "questionnaire-v1.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-questionnaire-v2",
+    "clientId": "CLI-10000",
+    "title": "Customer Questionnaire v2",
+    "status": "ACTIVE",
+    "createdAt": 1718593200000,
+    "updatedAt": 1718596800000,
+    "metadata": { "version": 2, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-017", "fileName": "questionnaire-v2.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-source-funds",
+    "clientId": "CLI-10000",
+    "title": "Source Of Funds",
+    "status": "ACTIVE",
+    "createdAt": 1718683200000,
+    "updatedAt": 1718686800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-018", "fileName": "source-of-funds.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-w8ben",
+    "clientId": "CLI-10000",
+    "title": "W8BEN",
+    "status": "ACTIVE",
+    "createdAt": 1718773200000,
+    "updatedAt": 1718776800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-019", "fileName": "w8ben.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-w9",
+    "clientId": "CLI-10000",
+    "title": "W9",
+    "status": "ACTIVE",
+    "createdAt": 1718863200000,
+    "updatedAt": 1718866800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-020", "fileName": "w9.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-beneficiaries",
+    "clientId": "CLI-10000",
+    "title": "Beneficiaries",
+    "status": "ACTIVE",
+    "createdAt": 1718953200000,
+    "updatedAt": 1718956800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-021", "fileName": "beneficiaries.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-shareholders",
+    "clientId": "CLI-10000",
+    "title": "Shareholders",
+    "status": "ACTIVE",
+    "createdAt": 1719043200000,
+    "updatedAt": 1719046800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-022", "fileName": "shareholders.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-master-agreement-v1",
+    "clientId": "CLI-10000",
+    "title": "Master Agreement v1",
+    "status": "ACTIVE",
+    "createdAt": 1719133200000,
+    "updatedAt": 1719136800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-023", "fileName": "master-agreement-v1.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-master-agreement-v2",
+    "clientId": "CLI-10000",
+    "title": "Master Agreement v2",
+    "status": "ACTIVE",
+    "createdAt": 1719223200000,
+    "updatedAt": 1719226800000,
+    "metadata": { "version": 2, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-024", "fileName": "master-agreement-v2.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-pricing-terms",
+    "clientId": "CLI-10000",
+    "title": "Pricing Terms",
+    "status": "ACTIVE",
+    "createdAt": 1719313200000,
+    "updatedAt": 1719316800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-025", "fileName": "pricing-terms.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-income-certificate",
+    "clientId": "CLI-10000",
+    "title": "Income Certificate",
+    "status": "ACTIVE",
+    "createdAt": 1719403200000,
+    "updatedAt": 1719406800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-026", "fileName": "income-certificate.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-onboarding-email",
+    "clientId": "CLI-10000",
+    "title": "Onboarding Email",
+    "status": "ACTIVE",
+    "createdAt": 1719493200000,
+    "updatedAt": 1719496800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-027", "fileName": "onboarding-email.eml", "mineType": "message/rfc822" }]
+  },
+  {
+    "documentId": "doc-support-chat",
+    "clientId": "CLI-10000",
+    "title": "Support Chat",
+    "status": "ACTIVE",
+    "createdAt": 1719583200000,
+    "updatedAt": 1719586800000,
+    "metadata": { "version": 1, "language": "en", "confidential": false },
+    "files": [{ "fileId": "FILE-028", "fileName": "support-chat.txt", "mineType": "text/plain" }]
+  },
+  {
+    "documentId": "doc-compliance-review",
+    "clientId": "CLI-10000",
+    "title": "Compliance Review",
+    "status": "ACTIVE",
+    "createdAt": 1719673200000,
+    "updatedAt": 1719676800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-029", "fileName": "compliance-review.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-deposit-contract",
+    "clientId": "CLI-10000",
+    "title": "Deposit Contract",
+    "status": "ACTIVE",
+    "createdAt": 1719763200000,
+    "updatedAt": 1719766800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-030", "fileName": "deposit-contract.pdf", "mineType": "application/pdf" }]
+  },
+  {
+    "documentId": "doc-card-agreement",
+    "clientId": "CLI-10000",
+    "title": "Card Agreement",
+    "status": "ACTIVE",
+    "createdAt": 1719853200000,
+    "updatedAt": 1719856800000,
+    "metadata": { "version": 1, "language": "en", "confidential": true },
+    "files": [{ "fileId": "FILE-031", "fileName": "card-agreement.pdf", "mineType": "application/pdf" }]
+  }
+]

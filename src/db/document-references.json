@@ -1,0 +1,250 @@
+[
+  {
+    "id": "doc-passport-front-v1",
+    "folderId": "kyc-identification-passport",
+    "version": 1,
+    "name": "Passport Front",
+    "dateCreated": 1714561200000,
+    "dateUpdate": 1714564800000
+  },
+  {
+    "id": "doc-passport-front-v2",
+    "folderId": "kyc-identification-passport",
+    "version": 2,
+    "name": "Passport Front",
+    "dateCreated": 1717243200000,
+    "dateUpdate": 1717246800000
+  },
+  {
+    "id": "doc-passport-back",
+    "folderId": "kyc-identification-passport",
+    "version": 1,
+    "name": "Passport Back",
+    "dateCreated": 1717333200000,
+    "dateUpdate": 1717336800000
+  },
+  {
+    "id": "doc-id-card-front",
+    "folderId": "kyc-identification-id-card",
+    "version": 1,
+    "name": "ID Card Front",
+    "dateCreated": 1717423200000,
+    "dateUpdate": 1717426800000
+  },
+  {
+    "id": "doc-driver-license",
+    "folderId": "kyc-identification-driver-license",
+    "version": 1,
+    "name": "Driver License",
+    "dateCreated": 1717513200000,
+    "dateUpdate": 1717516800000
+  },
+  {
+    "id": "doc-selfie-photo",
+    "folderId": "kyc-video-identification",
+    "version": 1,
+    "name": "Selfie Photo",
+    "dateCreated": 1717603200000,
+    "dateUpdate": 1717606800000
+  },
+  {
+    "id": "doc-selfie-video",
+    "folderId": "kyc-video-identification",
+    "version": 1,
+    "name": "Selfie Video",
+    "dateCreated": 1717693200000,
+    "dateUpdate": 1717696800000
+  },
+  {
+    "id": "doc-face-match-report",
+    "folderId": "kyc-video-identification",
+    "version": 2,
+    "name": "Face Match Report",
+    "dateCreated": 1717783200000,
+    "dateUpdate": 1717786800000
+  },
+  {
+    "id": "doc-utility-bill",
+    "folderId": "kyc-address-verification",
+    "version": 1,
+    "name": "Utility Bill",
+    "dateCreated": 1717873200000,
+    "dateUpdate": 1717876800000
+  },
+  {
+    "id": "doc-rental-agreement",
+    "folderId": "kyc-address-verification",
+    "version": 1,
+    "name": "Rental Agreement",
+    "dateCreated": 1717963200000,
+    "dateUpdate": 1717966800000
+  },
+  {
+    "id": "doc-tax-number",
+    "folderId": "kyc-tax-residency",
+    "version": 1,
+    "name": "Tax Number",
+    "dateCreated": 1718053200000,
+    "dateUpdate": 1718056800000
+  },
+  {
+    "id": "doc-crs-form",
+    "folderId": "kyc-tax-residency",
+    "version": 1,
+    "name": "CRS Form",
+    "dateCreated": 1718143200000,
+    "dateUpdate": 1718146800000
+  },
+  {
+    "id": "doc-sanctions-check",
+    "folderId": "kyc-sanctions-checks",
+    "version": 1,
+    "name": "Sanctions Check",
+    "dateCreated": 1718233200000,
+    "dateUpdate": 1718236800000
+  },
+  {
+    "id": "doc-pep-check",
+    "folderId": "kyc-sanctions-checks",
+    "version": 1,
+    "name": "PEP Check",
+    "dateCreated": 1718323200000,
+    "dateUpdate": 1718326800000
+  },
+  {
+    "id": "doc-biometric-template",
+    "folderId": "kyc-biometric-data",
+    "version": 1,
+    "name": "Biometric Template",
+    "dateCreated": 1718413200000,
+    "dateUpdate": 1718416800000
+  },
+  {
+    "id": "doc-questionnaire-v1",
+    "folderId": "kyc-questionnaire",
+    "version": 1,
+    "name": "Customer Questionnaire",
+    "dateCreated": 1718503200000,
+    "dateUpdate": 1718506800000
+  },
+  {
+    "id": "doc-questionnaire-v2",
+    "folderId": "kyc-questionnaire",
+    "version": 2,
+    "name": "Customer Questionnaire",
+    "dateCreated": 1718593200000,
+    "dateUpdate": 1718596800000
+  },
+  {
+    "id": "doc-source-funds",
+    "folderId": "kyc-questionnaire",
+    "version": 1,
+    "name": "Source Of Funds",
+    "dateCreated": 1718683200000,
+    "dateUpdate": 1718686800000
+  },
+  {
+    "id": "doc-w8ben",
+    "folderId": "kyc-fatca-crs",
+    "version": 1,
+    "name": "W8BEN",
+    "dateCreated": 1718773200000,
+    "dateUpdate": 1718776800000
+  },
+  {
+    "id": "doc-w9",
+    "folderId": "kyc-fatca-crs",
+    "version": 1,
+    "name": "W9",
+    "dateCreated": 1718863200000,
+    "dateUpdate": 1718866800000
+  },
+  {
+    "id": "doc-beneficiaries",
+    "folderId": "kyc-client-relations",
+    "version": 1,
+    "name": "Beneficiaries",
+    "dateCreated": 1718953200000,
+    "dateUpdate": 1718956800000
+  },
+  {
+    "id": "doc-shareholders",
+    "folderId": "kyc-client-relations",
+    "version": 1,
+    "name": "Shareholders",
+    "dateCreated": 1719043200000,
+    "dateUpdate": 1719046800000
+  },
+  {
+    "id": "doc-master-agreement-v1",
+    "folderId": "kyc-master-agreement",
+    "version": 1,
+    "name": "Master Agreement",
+    "dateCreated": 1719133200000,
+    "dateUpdate": 1719136800000
+  },
+  {
+    "id": "doc-master-agreement-v2",
+    "folderId": "kyc-master-agreement",
+    "version": 2,
+    "name": "Master Agreement",
+    "dateCreated": 1719223200000,
+    "dateUpdate": 1719226800000
+  },
+  {
+    "id": "doc-pricing-terms",
+    "folderId": "kyc-individual-terms",
+    "version": 1,
+    "name": "Pricing Terms",
+    "dateCreated": 1719313200000,
+    "dateUpdate": 1719316800000
+  },
+  {
+    "id": "doc-income-certificate",
+    "folderId": "kyc-certificates-other",
+    "version": 1,
+    "name": "Income Certificate",
+    "dateCreated": 1719403200000,
+    "dateUpdate": 1719406800000
+  },
+  {
+    "id": "doc-onboarding-email",
+    "folderId": "kyc-client-communications-emails",
+    "version": 1,
+    "name": "Onboarding Email",
+    "dateCreated": 1719493200000,
+    "dateUpdate": 1719496800000
+  },
+  {
+    "id": "doc-support-chat",
+    "folderId": "kyc-client-communications-chat-history",
+    "version": 1,
+    "name": "Support Chat",
+    "dateCreated": 1719583200000,
+    "dateUpdate": 1719586800000
+  },
+  {
+    "id": "doc-compliance-review",
+    "folderId": "kyc-aml-compliance",
+    "version": 1,
+    "name": "Compliance Review",
+    "dateCreated": 1719673200000,
+    "dateUpdate": 1719676800000
+  },
+  {
+    "id": "doc-deposit-contract",
+    "folderId": "passive-products-deposits",
+    "version": 1,
+    "name": "Deposit Contract",
+    "dateCreated": 1719763200000,
+    "dateUpdate": 1719766800000
+  },
+  {
+    "id": "doc-card-agreement",
+    "folderId": "passive-products-cards",
+    "version": 1,
+    "name": "Card Agreement",
+    "dateCreated": 1719853200000,
+    "dateUpdate": 1719856800000
+  }
+]

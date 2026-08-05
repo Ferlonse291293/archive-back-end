@@ -6,6 +6,8 @@ import {authMiddleware} from "../../middlewares/auth.middleware.js";
 
 const router = Router();
 
-router.get('/:clientId', authMiddleware, getDocumentTree);
+router.get('/tree/:clientId', authMiddleware, getDocumentTree);
+
+router.get('/:documentId', authMiddleware, getDocumentTree);
 
 export default router;

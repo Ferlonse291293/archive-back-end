@@ -1,59 +1,104 @@
 import fs from 'fs';
-import type {IClient} from "./clients.types.js";
+import { Prisma } from "@prisma/client";
 import {PAGINATION_SORT} from "../../shared/const/pagination.js";
-import {formatResClient} from "./clients.utils.js";
-import {TypeClient} from "./clients.types.js";
 
+import type {
+    IClientIndividualDetail,
+    IClientIndividualListItem,
+    IClientIndividualsFilter
+} from "./clients.types.js";
+import { TypeClient } from "./clients.types.js";
+import {PrismaPg} from "@prisma/adapter-pg";
+import {PrismaClient} from "@prisma/client";
+import {flattenClient, formatClientToItem} from "./clients.utils.js";
 
-const clientsDb = JSON.parse(
-    fs.readFileSync('./src/db/clients.json', 'utf-8')
-);
+const adapter = new PrismaPg({
+    connectionString: String(process.env.DATABASE_URL)
+})
+const prisma = new PrismaClient({ adapter });
 
+export const getIndividualClientsService = async (
+    page: number,
+    limit: number,
+    sort: PAGINATION_SORT,
+    search: IClientIndividualsFilter
+): Promise<IClientIndividualListItem[] | null>  => {
 
-export const getClientsService =
-    async (page: number, limit: number, sort: PAGINATION_SORT) => {
+    const safePage = Math.max(1, page);
 
-        const clients = [...clientsDb];
+    if (search.ipn || search.code) {
+        const client = await prisma.client.findFirst({
+            where: {
+                typeClient: "INDIVIDUALS",
+                AND: [
+                    search.ipn  ? { individual: { ipn: search.ipn } } : undefined,
+                    search.code ? { code: search.code } : undefined,
+                ].filter(Boolean) as Prisma.ClientWhereInput[]
+            },
 
-        if (clients.length === 0) {
-            return {
-                meta: {
-                    page,
-                    pageSize: 0,
-                    totalItems: 0,
-                    totalPages: 0,
-                    hasNextPage: false,
-                    hasPrevPage: false,
-                },
-                data: []
-            };
+            include: { individual: true }
+        });
+
+        if (!client || !client.individual) {
+            return null;
         }
-
-        const totalItems = clients.length;
-        const totalPages = Math.ceil(totalItems / limit);
-
-        const start = (page - 1) * limit;
-        const end = start + limit;
-
-        let data = clients.slice(start, end);
-        data = [...formatResClient(data, TypeClient.INDIVIDUALS)]
-
         return {
             meta: {
-                page,
-                pageSize: data.length,
-                totalItems,
-                totalPages,
-                hasNextPage: page < totalPages,
-                hasPrevPage: page > 1,
+                page: 1,
+                pageSize: 1,
+                totalItems: 1,
+                totalPages: 1,
+                hasNextPage: false,
+                hasPrevPage: false,
             },
-            data
+            data:   [formatClientToItem(flattenClient(client))]
         };
+    }
+
+
+    const where: Prisma.ClientWhereInput = {
+        typeClient: "INDIVIDUALS",
+        AND: [
+            search.firstName ? { individual: { firstName: { contains: search.firstName, mode: 'insensitive' as const } } } : undefined,
+            search.lastName  ? { individual: { lastName:  { contains: search.lastName,  mode: 'insensitive' as const } } } : undefined,
+        ].filter(Boolean) as Prisma.ClientWhereInput[]
     };
 
-export const getClientService =
-    async (clientId: string) => {
-        const client:  IClient   = [...clientsDb].find(el => el.clientId === clientId)
+    const [totalItems, clients] = await Promise.all([
+        prisma.client.count({ where }),
+        prisma.client.findMany({
+            where,
+            include: { individual: true },
+            skip: (safePage - 1) * limit,
+            take: limit,
+            orderBy: { createdAt: sort === PAGINATION_SORT.ASC ? 'asc' : 'desc' }
+        })
+    ]);
+
+    const totalPages = Math.ceil(totalItems / limit);
+    const data = clients.map(client => formatClientToItem(flattenClient(client)));
+
+    return {
+        meta: {
+            page: safePage,
+            pageSize: data.length,
+            totalItems,
+            totalPages,
+            hasNextPage: safePage < totalPages,
+            hasPrevPage: safePage > 1,
+        },
+        data
+    };
+};
+
+export const getIndividualClientService =
+    async (clientId: string) : Promise<IClientIndividualDetail | null> => {
+        const client = await prisma.client.findUnique({
+            where: {
+                id: clientId
+            },
+            include: { individual: true }
+        });
         if (!client) return null;
-        return client
+        return flattenClient(client);
     };

@@ -1,5 +1,5 @@
-import type {IClient, IClientRes} from "./clients.types.js";
-import {TypeClient} from "./clients.types.js";
+import type {IClientIndividualDetail, IClientIndividualListItem} from "./clients.types.js";
+
 
 export const buildPaginationMeta = (
     totalItems: number,
@@ -19,17 +19,21 @@ export const buildPaginationMeta = (
 };
 
 
-export const formatResClient = (clients: IClient[], typeClient: TypeClient):IClientRes[] => {
-    return  clients.map(el => {
+export const formatClientToItem = (client: IClientIndividualDetail):IClientIndividualListItem => {
         return {
-            clientId: el.clientId,
-            fullName: el.fullName,
-            code: el.code,
-            ipn: el.ipn,
-            type: typeClient,
-            passportNumber: el.passportNumber,
+            clientId: client.clientId,
+            fullName: client.fullName,
+            code: client.code,
+            ipn: client.ipn,
+            type: client.typeClient,
+            passportNumber: client.passportNumber,
             department: 'POST06',
             status: "OPEN"
         }
-    })
 }
+
+export const flattenClient = (client): IClientIndividualDetail => {
+    const { individual, ...rest } = client;
+    return { ...rest, ...individual };
+}
+

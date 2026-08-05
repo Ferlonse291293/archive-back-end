@@ -1,6 +1,10 @@
 import fs from 'fs';
-import jwt from 'jsonwebtoken';
 import {JWT_SECRET, REFRESH_SECRET} from "../../server.js";
+
+
+import jwt from "jsonwebtoken";
+import crypto from "crypto";
+import bcrypt from "bcryptjs";
 
 const users = JSON.parse(
     fs.readFileSync('./src/db/users.json', 'utf-8')
@@ -8,43 +12,50 @@ const users = JSON.parse(
 const userPermissions = JSON.parse(
     fs.readFileSync('./src/db/userPermission.json', 'utf-8')
 );
+import { PrismaClient } from '@prisma/client';
+import { PrismaPg } from '@prisma/adapter-pg';
 
+const adapter = new PrismaPg({
+    connectionString: String(process.env.DATABASE_URL)
+})
+
+const prisma = new PrismaClient({ adapter });
 
 export const loginService = async ({
                                        email,
-                                       password
+                                       password,
                                    }: {
     email: string;
     password: string;
 }) => {
-
-    const user = users.find(
-        (u: any) =>
-            u.email === email &&
-            u.password === password
-    );
+    const user = await prisma.user.findUnique({
+        where: { email },
+    });
 
     if (!user) return null;
 
+    const isValid = await bcrypt.compare(password, user.passwordHash);
+
+    if (!isValid) return null;
+
     const token = jwt.sign(
         { userId: user.id },
-        JWT_SECRET,
-        { expiresIn: '15m' }
+        process.env.JWT_SECRET!,
+        { expiresIn: "15m" }
     );
 
     const refreshToken = jwt.sign(
         { userId: user.id },
-        REFRESH_SECRET,
-        { expiresIn: '7d' }
+        process.env.REFRESH_SECRET!,
+        { expiresIn: "7d" }
     );
 
     return {
         token,
         refreshToken,
-        csrfToken: crypto.randomUUID()
+        csrfToken: crypto.randomUUID(),
     };
 };
-
 export const refreshService = async (
     refreshToken: string
 ) => {
@@ -71,11 +82,12 @@ export const refreshService = async (
 };
 
 export const profileService = async (userId: number) => {
-    const user = users.find((u: any) => u.id === userId);
+
+    const user  = await prisma.user.findUnique({
+        where: { id: userId },
+    });
 
     if (!user) return null;
-
-
 
     return {
         user: {

@@ -1,13 +1,14 @@
 import { Router } from 'express';
 import {getClient, getClients} from "./clients.controller.js";
 import {authMiddleware} from "../../middlewares/auth.middleware.js";
+import {TypeClientReq} from "./clients.types.js";
 
 
 
 const router = Router();
 
-router.get('/:clientId', authMiddleware, getClient);
+router.get('/individuals/:clientId', authMiddleware, getClient);
 
-router.post('/', authMiddleware, getClients);
+router.post(`/individuals`, authMiddleware, getClients);
 
 export default router;

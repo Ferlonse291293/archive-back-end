@@ -31,11 +31,10 @@ export const buildTree = (arrayFolders: IFolderDocument[] , arrDoc: IDocumentRef
         }
         return acc
     }, {})
-
     const tree = [] ;
 
     for (const node of Object.values(obj)) {
-        if (node.parentId === 'root') {
+        if (node.parentId === null) {
             tree.push(node);
         } else {
             const parent = obj[node.parentId];

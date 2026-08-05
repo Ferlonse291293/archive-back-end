@@ -8,8 +8,8 @@ export const getDocumentTree = async (
     res: Response
 ) =>{
     const result = await getDocumentTreeService(req.params.clientId)
-    if( !result){
-        return res.status(500).json({
+    if(!result){
+        return res.status(400).json({
             message: 'Clients without tree'
         });
     }

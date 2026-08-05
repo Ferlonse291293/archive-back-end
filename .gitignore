@@ -59,3 +59,5 @@ jest-cache/
 
 # Next optional (если вдруг миксуешь)
 .next/
+
+/src/generated/prisma

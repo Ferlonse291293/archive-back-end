@@ -1,0 +1,187 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id           Int      @id @default(autoincrement())
+  username     String   @unique
+  email        String   @unique
+  passwordHash String
+  role         String   @default("user")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+
+model Department {
+  id          String   @id @default(uuid())
+  code        String   @unique
+  name        String
+  city        String
+  address     String
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  @@map("department")
+}
+
+
+
+enum TypeClient {
+  INDIVIDUALS  @map("C01")
+  LEGAL_ENTITY  @map("C02")
+  SOLE_PROPRIETOR @map("C03")
+}
+
+model Client {
+  id         String     @id @map("client_id") // 16-значная opaque-строка
+  typeClient TypeClient @map("type_client")
+  email      String
+  phone      String
+  code       String
+  createdAt  DateTime   @default(now()) @map("created_at")
+  updatedAt  DateTime   @updatedAt @map("updated_at")
+
+  individual     Individual?
+  legalEntity    LegalEntity?
+  soleProprietor SoleProprietor?
+
+  documentGroups DocumentGroup[]
+
+  @@map("clients")
+}
+
+model Individual {
+  clientId       String   @id @map("client_id")
+  firstName      String   @map("first_name")
+  lastName       String   @map("last_name")
+  fullName       String   @map("full_name")
+  birthDate      DateTime @map("birth_date")
+  nationality    String
+  passportNumber String   @map("passport_number")
+  ipn            String
+
+  client Client @relation(fields: [clientId], references: [id], onDelete: Cascade)
+
+  @@map("individuals")
+}
+
+model LegalEntity {
+  clientId           String    @id @map("client_id")
+  companyName        String    @map("company_name")
+  registrationNumber String    @map("registration_number")
+  legalAddress       String    @map("legal_address")
+  directorFullName   String    @map("director_full_name")
+  taxNumber          String    @map("tax_number")
+  registrationDate   DateTime? @map("registration_date")
+
+  client Client @relation(fields: [clientId], references: [id], onDelete: Cascade)
+
+  @@map("legal_entities")
+}
+
+model SoleProprietor {
+  clientId               String    @id @map("client_id")
+  fullName               String    @map("full_name")
+  registrationNumber     String    @map("registration_number")
+  taxCode                String    @map("tax_code")
+  registrationAddress    String    @map("registration_address")
+  registrationDate       DateTime? @map("registration_date")
+
+  client Client @relation(fields: [clientId], references: [id], onDelete: Cascade)
+
+  @@map("sole_proprietors")
+}
+
+model Folder {
+  id             String  @id // 16-значная opaque-строка
+  name           String
+  parentFolderId String? @map("parent_folder_id")
+
+  parent   Folder?  @relation("FolderHierarchy", fields: [parentFolderId], references: [id])
+  children Folder[] @relation("FolderHierarchy")
+
+  documentGroups DocumentGroup[]
+
+  @@index([parentFolderId])
+  @@map("folders")
+}
+
+model DocumentGroup {
+  id       String @id // стабильный id логического документа, не меняется между версиями
+  clientId String @map("client_id")
+  folderId String @map("folder_id")
+  title    String
+
+  currentVersionId String? @unique @map("current_version_id")
+
+  client         Client     @relation(fields: [clientId], references: [id])
+  folder         Folder     @relation(fields: [folderId], references: [id])
+  currentVersion Document?  @relation("CurrentVersion", fields: [currentVersionId], references: [id])
+  versions       Document[] @relation("GroupVersions")
+
+  @@index([clientId])
+  @@index([folderId])
+  @@map("document_groups")
+}
+
+model Document {
+  id         String   @id // свой id на каждую версию
+  groupId    String   @map("group_id")
+  metadataId String   @unique @map("metadata_id")
+  createdAt  DateTime @map("created_at")
+  updatedAt  DateTime @map("updated_at")
+  group      DocumentGroup  @relation("GroupVersions", fields: [groupId], references: [id])
+  metadata   Metadata       @relation(fields: [metadataId], references: [id])
+  files      DocumentFile[]
+  currentFor DocumentGroup? @relation("CurrentVersion")
+
+  @@index([groupId])
+  @@map("documents")
+}
+
+model Metadata {
+  id                 String    @id
+  version            Int       @default(1)
+  language           String
+  confidential       Boolean   @default(false)
+  documentType       String    @map("document_type")
+  issueDate          DateTime? @map("issue_date")
+  expiryDate         DateTime? @map("expiry_date")
+  issuingAuthority   String?   @map("issuing_authority")
+  verificationStatus String    @default("PENDING") @map("verification_status")
+
+  document Document?
+
+  @@map("metadata")
+}
+
+model File {
+  id          String   @id
+  fileName    String   @map("file_name")
+  mimeType    String   @map("mime_type")
+  sizeBytes   Int      @map("size_bytes")
+  storagePath String   @map("storage_path")
+  checksum    String
+  uploadedAt  DateTime @map("uploaded_at")
+
+  documentFiles DocumentFile[]
+
+  @@map("files")
+}
+
+model DocumentFile {
+  documentId String @map("document_id")
+  fileId     String @map("file_id")
+
+  document Document @relation(fields: [documentId], references: [id])
+  file     File     @relation(fields: [fileId], references: [id])
+
+  @@id([documentId, fileId])
+  @@map("document_files")
+}
+

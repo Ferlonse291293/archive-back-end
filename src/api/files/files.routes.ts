@@ -1,20 +1,14 @@
 import { Router } from 'express';
-
 import {
-    getMetadata,
-    downloadFile
+    findFileById,
+    uploadFile,
 } from './files.controller.js';
 
 const router = Router();
 
-router.get(
-    '/:idDocument/metadata',
-    getMetadata
-);
-
-router.get(
-    '/files/:fileId/download',
-    downloadFile
-);
+router.get('/:id', findFileById);
+// router.get('/document/:documentId', listFilesByDocument);
+router.post('/:documentId', uploadFile); // multer больше не нужен
+// router.delete('/:id', deleteFile);
 
 export default router;

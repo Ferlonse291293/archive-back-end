@@ -1,4 +1,11 @@
-import type {IDocumentRef, IDocumentTree, IFolderDocument} from "./documents.types.js";
+import type {
+    IDocument,
+    IDocumentDto, IDocumentFile,
+    IDocumentGroup,
+    IDocumentRef,
+ IDocumentVersionDto, IFile,
+    IFolderDocument,
+} from "./documents.types.js";
 
 const addDocuments = (documentsRef: IDocumentRef[] , id: string)  => {
     const docForFolder = documentsRef.filter(el => el.folderId === id)
@@ -8,7 +15,7 @@ const addDocuments = (documentsRef: IDocumentRef[] , id: string)  => {
     return  docForFolder.map(el => {
         return {
             content: el,
-            type: 'DOCUMENT',
+            type: 'ITEM',
             id: el.id,
             parentId:  el.folderId,
             name: el.name,
@@ -45,4 +52,30 @@ export const buildTree = (arrayFolders: IFolderDocument[] , arrDoc: IDocumentRef
     }
     return tree
 
+}
+
+export const formatDocument = (doc: IDocument): IDocumentDto => {
+ const {metadata, files, group, id, createdAt} = doc
+    return {
+        id: id,
+        metadata: {...metadata, createdAt: createdAt},
+        versions: formatVersions(group),
+        files: formatFiles(files)
+    }
+}
+
+
+export const formatVersions =(group: IDocumentGroup): IDocumentVersionDto[] =>{
+   return  group.versions.map(d => {
+        return {
+            documentId:  d.id,
+            version: d.metadata.version,
+            name: group.title
+        }
+    })
+}
+export const formatFiles = (files: IDocumentFile[]): IFile[] =>{
+return files.map(f => {
+    return {...f.file , documentId: f.documentId}
+})
 }

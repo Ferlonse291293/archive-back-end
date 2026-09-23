@@ -26,6 +26,8 @@ model Department {
   isActive    Boolean  @default(true)
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+
+  individuals Individual[]
   @@map("department")
 }
 
@@ -64,9 +66,12 @@ model Individual {
   nationality    String
   passportNumber String   @map("passport_number")
   ipn            String
+  departmentId   String  @map("department_id")
 
-  client Client @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  client     Client      @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  department Department @relation(fields: [departmentId], references: [id])
 
+  @@index([departmentId])
   @@map("individuals")
 }
 
@@ -98,7 +103,7 @@ model SoleProprietor {
 }
 
 model Folder {
-  id             String  @id // 16-значная opaque-строка
+  id             String  @id
   name           String
   parentFolderId String? @map("parent_folder_id")
 
@@ -112,7 +117,7 @@ model Folder {
 }
 
 model DocumentGroup {
-  id       String @id // стабильный id логического документа, не меняется между версиями
+  id       String @id
   clientId String @map("client_id")
   folderId String @map("folder_id")
   title    String
@@ -130,7 +135,7 @@ model DocumentGroup {
 }
 
 model Document {
-  id         String   @id // свой id на каждую версию
+  id         String   @id
   groupId    String   @map("group_id")
   metadataId String   @unique @map("metadata_id")
   createdAt  DateTime @map("created_at")

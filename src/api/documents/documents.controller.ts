@@ -1,10 +1,10 @@
 import type { Request, Response } from 'express';
-import {getDocumentTreeService} from "./documents.service.js";
+import {getDocumentByIdService, getDocumentTreeService} from "./documents.service.js";
 
 
 
 export const getDocumentTree = async (
-    req: Request,
+    req: Request<{ clientId: string }>,
     res: Response
 ) =>{
     const result = await getDocumentTreeService(req.params.clientId)
@@ -17,3 +17,22 @@ export const getDocumentTree = async (
     return res.status(200).json(result);
 
 }
+
+export const getDocument = async (
+    req: Request<{ documentId: string }>,
+    res: Response
+) =>{
+    const result = await getDocumentByIdService(req.params.documentId)
+    if(!result){
+        return res.status(404).json({
+            message: 'Document not found'
+        });
+    }
+
+    return res.status(200).json(result);
+}
+
+
+
+
+

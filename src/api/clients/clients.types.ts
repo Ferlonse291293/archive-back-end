@@ -1,3 +1,4 @@
+import type {IOption} from "../options/options.types.js";
 
 
 export interface IClient {
@@ -16,6 +17,7 @@ export interface IClientIndividualDetail extends IClient {
     birthDate: string
     nationality: string
     passportNumber: string
+    department: IOption
 }
 
 
@@ -49,7 +51,7 @@ export interface IClientIndividualListItem {
     ipn: string
     type: string
     passportNumber: string
-    department: string
+    department: IOption
     status: string
 }
 

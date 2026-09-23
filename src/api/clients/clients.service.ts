@@ -7,7 +7,6 @@ import type {
     IClientIndividualListItem,
     IClientIndividualsFilter
 } from "./clients.types.js";
-import { TypeClient } from "./clients.types.js";
 import {PrismaPg} from "@prisma/adapter-pg";
 import {PrismaClient} from "@prisma/client";
 import {flattenClient, formatClientToItem} from "./clients.utils.js";
@@ -24,7 +23,7 @@ export const getIndividualClientsService = async (
     search: IClientIndividualsFilter
 ): Promise<IClientIndividualListItem[] | null>  => {
 
-    const safePage = Math.max(1, page);
+    const safePage = Math.max(0, page);
 
     if (search.ipn || search.code) {
         const client = await prisma.client.findFirst({
@@ -68,8 +67,14 @@ export const getIndividualClientsService = async (
         prisma.client.count({ where }),
         prisma.client.findMany({
             where,
-            include: { individual: true },
-            skip: (safePage - 1) * limit,
+            include: {
+                individual: {
+                    include: {
+                        department: { select: { address: true, code: true } },
+                    },
+                },
+            },
+            skip: safePage * limit,
             take: limit,
             orderBy: { createdAt: sort === PAGINATION_SORT.ASC ? 'asc' : 'desc' }
         })
@@ -80,12 +85,12 @@ export const getIndividualClientsService = async (
 
     return {
         meta: {
-            page: safePage,
+            page: safePage ,
             pageSize: data.length,
             totalItems,
             totalPages,
-            hasNextPage: safePage < totalPages,
-            hasPrevPage: safePage > 1,
+            hasNextPage: safePage < totalPages - 1,
+            hasPrevPage: safePage > 0,
         },
         data
     };
@@ -97,7 +102,13 @@ export const getIndividualClientService =
             where: {
                 id: clientId
             },
-            include: { individual: true }
+            include: {
+                individual: {
+                    include: {
+                        department: { select: { address: true, code: true } },
+                    },
+                },
+            }
         });
         if (!client) return null;
         return flattenClient(client);

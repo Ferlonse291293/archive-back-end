@@ -1,400 +1,400 @@
 [
   {
     "id": "e6593430-805f-4450-9150-794cb8e5d7a1",
-    "code": "BR-001",
-    "name": "Branch № BR-001 1 Vitosha Blvd BR-001",
+    "code": "93136738",
+    "name": "93136738 1 Vitosha Blvd",
     "street": "1 Vitosha Blvd",
     "city": "Sofia",
     "region": "Sofia-City"
   },
   {
     "id": "3083f8d4-0915-456c-a316-51198582eed1",
-    "code": "BR-002",
-    "name": "Branch № BR-002 34 Patriarh Evtimiy Blvd BR-002",
+    "code": "00129148",
+    "name": "00129148 34 Patriarh Evtimiy Blvd",
     "street": "34 Patriarh Evtimiy Blvd",
     "city": "Sofia",
     "region": "Sofia-City"
   },
   {
     "id": "580e2de9-d217-4dd0-8ffb-3d3bfe2fac6a",
-    "code": "BR-003",
-    "name": "Branch № BR-003 12 Tsarigradsko Shose BR-003",
+    "code": "46899735",
+    "name": "46899735 12 Tsarigradsko Shose",
     "street": "12 Tsarigradsko Shose",
     "city": "Sofia",
     "region": "Sofia-City"
   },
   {
     "id": "31c9621b-6b1c-4915-8fc8-fe4855d997e5",
-    "code": "BR-004",
-    "name": "Branch № BR-004 7 Graf Ignatiev St BR-004",
+    "code": "43135974",
+    "name": "43135974 7 Graf Ignatiev St",
     "street": "7 Graf Ignatiev St",
     "city": "Sofia",
     "region": "Sofia-City"
   },
   {
     "id": "7c4679e1-2ec2-42d8-98d7-baa7ca4e7c47",
-    "code": "BR-005",
-    "name": "Branch № BR-005 22 Knyaz Dondukov Blvd BR-005",
+    "code": "82095436",
+    "name": "82095436 22 Knyaz Dondukov Blvd",
     "street": "22 Knyaz Dondukov Blvd",
     "city": "Sofia",
     "region": "Sofia-City"
   },
   {
     "id": "56762a2f-ec68-4294-9595-c909aa1b4d51",
-    "code": "BR-006",
-    "name": "Branch № BR-006 5 Aleksandar Stamboliyski Blvd BR-006",
+    "code": "91179796",
+    "name": "91179796 5 Aleksandar Stamboliyski Blvd",
     "street": "5 Aleksandar Stamboliyski Blvd",
     "city": "Sofia",
     "region": "Sofia-City"
   },
   {
     "id": "ac8c3703-4909-46f3-ab32-93efdc549b8f",
-    "code": "BR-007",
-    "name": "Branch № BR-007 18 Bulgaria Blvd BR-007",
+    "code": "13097496",
+    "name": "13097496 18 Bulgaria Blvd",
     "street": "18 Bulgaria Blvd",
     "city": "Sofia",
     "region": "Sofia-City"
   },
   {
     "id": "dd9badd8-bf4b-4f31-ad68-a579fe0e212b",
-    "code": "BR-008",
-    "name": "Branch № BR-008 3 Vasil Levski Blvd BR-008",
+    "code": "15700805",
+    "name": "15700805 3 Vasil Levski Blvd",
     "street": "3 Vasil Levski Blvd",
     "city": "Sofia",
     "region": "Sofia-City"
   },
   {
     "id": "772885a0-91d3-437c-a26a-748435bfe222",
-    "code": "BR-009",
-    "name": "Branch № BR-009 9 Hristo Botev Blvd BR-009",
+    "code": "03221699",
+    "name": "03221699 9 Hristo Botev Blvd",
     "street": "9 Hristo Botev Blvd",
     "city": "Sofia",
     "region": "Sofia-City"
   },
   {
     "id": "a2364539-624f-401d-b46f-e15366ede43c",
-    "code": "BR-010",
-    "name": "Branch № BR-010 41 Slivnitsa Blvd BR-010",
+    "code": "36178391",
+    "name": "36178391 41 Slivnitsa Blvd",
     "street": "41 Slivnitsa Blvd",
     "city": "Sofia",
     "region": "Sofia-City"
   },
   {
     "id": "46b7221f-2891-4bdc-83d6-c970e4d5e302",
-    "code": "BR-011",
-    "name": "Branch № BR-011 6 Knyaginya Maria Luiza Blvd BR-011",
+    "code": "41842780",
+    "name": "41842780 6 Knyaginya Maria Luiza Blvd",
     "street": "6 Knyaginya Maria Luiza Blvd",
     "city": "Plovdiv",
     "region": "Plovdiv"
   },
   {
     "id": "738a0882-e8be-41cf-9d26-dd748a2a9de4",
-    "code": "BR-012",
-    "name": "Branch № BR-012 14 Ivan Vazov St BR-012",
+    "code": "58320817",
+    "name": "58320817 14 Ivan Vazov St",
     "street": "14 Ivan Vazov St",
     "city": "Plovdiv",
     "region": "Plovdiv"
   },
   {
     "id": "a1d8aae3-2bba-497c-94a5-22c6d5a880b6",
-    "code": "BR-013",
-    "name": "Branch № BR-013 28 Tsar Boris III Obedinitel Blvd BR-013",
+    "code": "18224829",
+    "name": "18224829 28 Tsar Boris III Obedinitel Blvd",
     "street": "28 Tsar Boris III Obedinitel Blvd",
     "city": "Plovdiv",
     "region": "Plovdiv"
   },
   {
     "id": "5903f14b-af89-4ff2-aa18-8f844c38d400",
-    "code": "BR-014",
-    "name": "Branch № BR-014 3 6-ti Septemvri St BR-014",
+    "code": "67904554",
+    "name": "67904554 3 6-ti Septemvri St",
     "street": "3 6-ti Septemvri St",
     "city": "Plovdiv",
     "region": "Plovdiv"
   },
   {
     "id": "97321e41-6802-458c-8051-7dca3946bbb5",
-    "code": "BR-015",
-    "name": "Branch № BR-015 11 Hristo Danov St BR-015",
+    "code": "05023553",
+    "name": "05023553 11 Hristo Danov St",
     "street": "11 Hristo Danov St",
     "city": "Plovdiv",
     "region": "Plovdiv"
   },
   {
     "id": "affd253a-ee2a-41ab-b85b-2a8b6f8f5805",
-    "code": "BR-016",
-    "name": "Branch № BR-016 2 Tsar Osvoboditel Blvd BR-016",
+    "code": "26732610",
+    "name": "26732610 2 Tsar Osvoboditel Blvd",
     "street": "2 Tsar Osvoboditel Blvd",
     "city": "Varna",
     "region": "Varna"
   },
   {
     "id": "9b8f5215-0371-4079-bf7c-bee55667e1b7",
-    "code": "BR-017",
-    "name": "Branch № BR-017 17 Slivnitsa Blvd BR-017",
+    "code": "39574567",
+    "name": "39574567 17 Slivnitsa Blvd",
     "street": "17 Slivnitsa Blvd",
     "city": "Varna",
     "region": "Varna"
   },
   {
     "id": "383fcccc-838e-43df-a87c-7cb513a433eb",
-    "code": "BR-018",
-    "name": "Branch № BR-018 33 Knyaz Boris I Blvd BR-018",
+    "code": "43702044",
+    "name": "43702044 33 Knyaz Boris I Blvd",
     "street": "33 Knyaz Boris I Blvd",
     "city": "Varna",
     "region": "Varna"
   },
   {
     "id": "5ed6434c-f332-4af2-bf8c-fa651b848f09",
-    "code": "BR-019",
-    "name": "Branch № BR-019 5 Vladislav Varnenchik Blvd BR-019",
+    "code": "69785980",
+    "name": "69785980 5 Vladislav Varnenchik Blvd",
     "street": "5 Vladislav Varnenchik Blvd",
     "city": "Varna",
     "region": "Varna"
   },
   {
     "id": "179a031b-2ba0-4864-bfbe-4c1958a4c80c",
-    "code": "BR-020",
-    "name": "Branch № BR-020 21 Primorski Blvd BR-020",
+    "code": "14896643",
+    "name": "14896643 21 Primorski Blvd",
     "street": "21 Primorski Blvd",
     "city": "Varna",
     "region": "Varna"
   },
   {
     "id": "4f19ad15-3c43-46af-91d8-5ac921f79ebe",
-    "code": "BR-021",
-    "name": "Branch № BR-021 8 Aleksandrovska St BR-021",
+    "code": "03842347",
+    "name": "03842347 8 Aleksandrovska St",
     "street": "8 Aleksandrovska St",
     "city": "Burgas",
     "region": "Burgas"
   },
   {
     "id": "448c090d-d8e8-4f12-b9a9-e0fe7d35ffc4",
-    "code": "BR-022",
-    "name": "Branch № BR-022 19 Demokratsiya Blvd BR-022",
+    "code": "40795759",
+    "name": "40795759 19 Demokratsiya Blvd",
     "street": "19 Demokratsiya Blvd",
     "city": "Burgas",
     "region": "Burgas"
   },
   {
     "id": "608fb28f-c281-4531-9f67-4a3bd6c7ad40",
-    "code": "BR-023",
-    "name": "Branch № BR-023 4 Bogoridi St BR-023",
+    "code": "58121405",
+    "name": "58121405 4 Bogoridi St",
     "street": "4 Bogoridi St",
     "city": "Burgas",
     "region": "Burgas"
   },
   {
     "id": "50a4ea5e-93be-4aa5-8721-a58d430bf975",
-    "code": "BR-024",
-    "name": "Branch № BR-024 30 San Stefano St BR-024",
+    "code": "14366942",
+    "name": "14366942 30 San Stefano St",
     "street": "30 San Stefano St",
     "city": "Burgas",
     "region": "Burgas"
   },
   {
     "id": "92f0cf87-cabc-42c0-b4af-b1c626a2c2d1",
-    "code": "BR-025",
-    "name": "Branch № BR-025 12 Lazar Kichevski St BR-025",
+    "code": "39452165",
+    "name": "39452165 12 Lazar Kichevski St",
     "street": "12 Lazar Kichevski St",
     "city": "Burgas",
     "region": "Burgas"
   },
   {
     "id": "ed20287a-9878-4669-aa60-e1899286eded",
-    "code": "BR-026",
-    "name": "Branch № BR-026 1 Svoboda Sq BR-026",
+    "code": "84832843",
+    "name": "84832843 1 Svoboda Sq",
     "street": "1 Svoboda Sq",
     "city": "Ruse",
     "region": "Ruse"
   },
   {
     "id": "f9724c22-e560-4a6c-832a-1bc494d4b5a0",
-    "code": "BR-027",
-    "name": "Branch № BR-027 15 Aleksandrovska St BR-027",
+    "code": "27885188",
+    "name": "27885188 15 Aleksandrovska St",
     "street": "15 Aleksandrovska St",
     "city": "Ruse",
     "region": "Ruse"
   },
   {
     "id": "cd1fd2be-ff82-4e64-b067-f6191133b4d6",
-    "code": "BR-028",
-    "name": "Branch № BR-028 7 Pridunavski Blvd BR-028",
+    "code": "35370173",
+    "name": "35370173 7 Pridunavski Blvd",
     "street": "7 Pridunavski Blvd",
     "city": "Ruse",
     "region": "Ruse"
   },
   {
     "id": "c979a831-1190-4213-8339-08fa4b363166",
-    "code": "BR-029",
-    "name": "Branch № BR-029 22 Hristo Botev St BR-029",
+    "code": "11613792",
+    "name": "11613792 22 Hristo Botev St",
     "street": "22 Hristo Botev St",
     "city": "Ruse",
     "region": "Ruse"
   },
   {
     "id": "2f921cbd-00cf-421f-9433-0fd6932dd4ee",
-    "code": "BR-030",
-    "name": "Branch № BR-030 9 Tsar Kaloyan St BR-030",
+    "code": "61024432",
+    "name": "61024432 9 Tsar Kaloyan St",
     "street": "9 Tsar Kaloyan St",
     "city": "Ruse",
     "region": "Ruse"
   },
   {
     "id": "b0ffb613-733a-4825-a206-7a8943fb9108",
-    "code": "BR-031",
-    "name": "Branch № BR-031 3 Tsar Simeon Veliki Blvd BR-031",
+    "code": "67183799",
+    "name": "67183799 3 Tsar Simeon Veliki Blvd",
     "street": "3 Tsar Simeon Veliki Blvd",
     "city": "Stara Zagora",
     "region": "Stara Zagora"
   },
   {
     "id": "89e2c46b-8508-4dbe-980b-50b1e045eddc",
-    "code": "BR-032",
-    "name": "Branch № BR-032 18 General Stoletov St BR-032",
+    "code": "00902716",
+    "name": "00902716 18 General Stoletov St",
     "street": "18 General Stoletov St",
     "city": "Stara Zagora",
     "region": "Stara Zagora"
   },
   {
     "id": "0d104993-98c7-4f66-a2cb-b6d80cce4459",
-    "code": "BR-033",
-    "name": "Branch № BR-033 6 Hadji Dimitar St BR-033",
+    "code": "56061687",
+    "name": "56061687 6 Hadji Dimitar St",
     "street": "6 Hadji Dimitar St",
     "city": "Stara Zagora",
     "region": "Stara Zagora"
   },
   {
     "id": "022e93ad-a372-4643-b8cd-1e73d7569964",
-    "code": "BR-034",
-    "name": "Branch № BR-034 11 Ivan Vazov St BR-034",
+    "code": "12954670",
+    "name": "12954670 11 Ivan Vazov St",
     "street": "11 Ivan Vazov St",
     "city": "Pleven",
     "region": "Pleven"
   },
   {
     "id": "87796819-c062-4e5d-bfaa-d22e109d1624",
-    "code": "BR-035",
-    "name": "Branch № BR-035 25 Republika Blvd BR-035",
+    "code": "30457144",
+    "name": "30457144 25 Republika Blvd",
     "street": "25 Republika Blvd",
     "city": "Pleven",
     "region": "Pleven"
   },
   {
     "id": "b8f4cfa6-2586-40cf-bf70-904b18f8d24d",
-    "code": "BR-036",
-    "name": "Branch № BR-036 4 Vasil Levski St BR-036",
+    "code": "84291413",
+    "name": "84291413 4 Vasil Levski St",
     "street": "4 Vasil Levski St",
     "city": "Pleven",
     "region": "Pleven"
   },
   {
     "id": "a91e4298-c6b8-4e1e-896c-b046bf9b205f",
-    "code": "BR-037",
-    "name": "Branch № BR-037 10 Slavyanska St BR-037",
+    "code": "50091929",
+    "name": "50091929 10 Slavyanska St",
     "street": "10 Slavyanska St",
     "city": "Sliven",
     "region": "Sliven"
   },
   {
     "id": "01214986-c8b2-49af-86ea-3a75bb5faf19",
-    "code": "BR-038",
-    "name": "Branch № BR-038 2 Tsar Osvoboditel St BR-038",
+    "code": "14606485",
+    "name": "14606485 2 Tsar Osvoboditel St",
     "street": "2 Tsar Osvoboditel St",
     "city": "Sliven",
     "region": "Sliven"
   },
   {
     "id": "358a8c41-1133-42ae-98cf-61d69a042688",
-    "code": "BR-039",
-    "name": "Branch № BR-039 5 Hadzhi Dimitar St BR-039",
+    "code": "47333653",
+    "name": "47333653 5 Hadzhi Dimitar St",
     "street": "5 Hadzhi Dimitar St",
     "city": "Dobrich",
     "region": "Dobrich"
   },
   {
     "id": "cd5fc206-f591-4aa3-a549-cb1cfc5033e2",
-    "code": "BR-040",
-    "name": "Branch № BR-040 13 25-ti Septemvri Blvd BR-040",
+    "code": "97896182",
+    "name": "97896182 13 25-ti Septemvri Blvd",
     "street": "13 25-ti Septemvri Blvd",
     "city": "Dobrich",
     "region": "Dobrich"
   },
   {
     "id": "212a7ce9-38fc-4c08-9b86-979dae5c1aff",
-    "code": "BR-041",
-    "name": "Branch № BR-041 7 Paisiy Hilendarski St BR-041",
+    "code": "95000696",
+    "name": "95000696 7 Paisiy Hilendarski St",
     "street": "7 Paisiy Hilendarski St",
     "city": "Shumen",
     "region": "Shumen"
   },
   {
     "id": "005cf7e7-de22-49ea-a5b5-43b4e3c71907",
-    "code": "BR-042",
-    "name": "Branch № BR-042 20 Slavyanski Blvd BR-042",
+    "code": "33274334",
+    "name": "33274334 20 Slavyanski Blvd",
     "street": "20 Slavyanski Blvd",
     "city": "Shumen",
     "region": "Shumen"
   },
   {
     "id": "544ba678-55df-4469-8fba-5eb4c001cd1f",
-    "code": "BR-043",
-    "name": "Branch № BR-043 3 Targovska St BR-043",
+    "code": "05336917",
+    "name": "05336917 3 Targovska St",
     "street": "3 Targovska St",
     "city": "Pernik",
     "region": "Pernik"
   },
   {
     "id": "b1b64dee-f157-4509-9e08-a4a71218b597",
-    "code": "BR-044",
-    "name": "Branch № BR-044 16 Sveti Georgi Pobedonosets St BR-044",
+    "code": "02957656",
+    "name": "02957656 16 Sveti Georgi Pobedonosets St",
     "street": "16 Sveti Georgi Pobedonosets St",
     "city": "Pernik",
     "region": "Pernik"
   },
   {
     "id": "eb81939a-0e25-4885-b0ae-de75ac3ed63d",
-    "code": "BR-045",
-    "name": "Branch № BR-045 8 Gurko St BR-045",
+    "code": "08433276",
+    "name": "08433276 8 Gurko St",
     "street": "8 Gurko St",
     "city": "Veliko Tarnovo",
     "region": "Veliko Tarnovo"
   },
   {
     "id": "6693eb4c-4910-4fc4-be85-bad0c051e5cc",
-    "code": "BR-046",
-    "name": "Branch № BR-046 1 Stefan Stambolov Blvd BR-046",
+    "code": "83536796",
+    "name": "83536796 1 Stefan Stambolov Blvd",
     "street": "1 Stefan Stambolov Blvd",
     "city": "Veliko Tarnovo",
     "region": "Veliko Tarnovo"
   },
   {
     "id": "964bdd9e-6e2c-4890-b85f-8f3a3e8ddb45",
-    "code": "BR-047",
-    "name": "Branch № BR-047 14 Hristo Botev St BR-047",
+    "code": "49969366",
+    "name": "49969366 14 Hristo Botev St",
     "street": "14 Hristo Botev St",
     "city": "Blagoevgrad",
     "region": "Blagoevgrad"
   },
   {
     "id": "775b7963-a305-4b94-9b88-9b93e661c1a4",
-    "code": "BR-048",
-    "name": "Branch № BR-048 9 Macedonia St BR-048",
+    "code": "67407401",
+    "name": "67407401 9 Macedonia St",
     "street": "9 Macedonia St",
     "city": "Blagoevgrad",
     "region": "Blagoevgrad"
   },
   {
     "id": "99798d2a-f88f-4c94-838c-9f1b7424309c",
-    "code": "BR-049",
-    "name": "Branch № BR-049 5 Vasil Aprilov St BR-049",
+    "code": "05479713",
+    "name": "05479713 5 Vasil Aprilov St",
     "street": "5 Vasil Aprilov St",
     "city": "Gabrovo",
     "region": "Gabrovo"
   },
   {
     "id": "0c61f617-2389-4ce7-8e47-b07d1e505edb",
-    "code": "BR-050",
-    "name": "Branch № BR-050 22 Emanouil Manolov St BR-050",
+    "code": "71126874",
+    "name": "71126874 22 Emanouil Manolov St",
     "street": "22 Emanouil Manolov St",
     "city": "Gabrovo",
     "region": "Gabrovo"

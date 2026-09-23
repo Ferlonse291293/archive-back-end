@@ -1,0 +1,242 @@
+[
+  {
+    "templateId": "QqoiYrD9rPbZmMN0",
+    "title": "Passport Copy",
+    "folderName": "Passport",
+    "folderId": "fhksKMeujbQHzmnD",
+    "documentType": "PASSPORT_COPY",
+    "confidential": true
+  },
+  {
+    "templateId": "7GNtbuRFcctL19ec",
+    "title": "National ID Copy",
+    "folderName": "ID Card",
+    "folderId": "E0gk4xTwVVsL0B7H",
+    "documentType": "NATIONAL_ID_COPY",
+    "confidential": true
+  },
+  {
+    "templateId": "ALXp4yDQShaYhV29",
+    "title": "Proof of Address - Utility Bill",
+    "folderName": "Address Verification",
+    "folderId": "dUq1ZjcfWoV8Nf2z",
+    "documentType": "PROOF_OF_ADDRESS",
+    "confidential": true
+  },
+  {
+    "templateId": "WaZwadjE9aiA3PRv",
+    "title": "Client Photo",
+    "folderName": "Biometric Data",
+    "folderId": "iUuJoWPOxdt5U6Ve",
+    "documentType": "CLIENT_PHOTO",
+    "confidential": true
+  },
+  {
+    "templateId": "HmHJRFCpnQBVEh8L",
+    "title": "KYC Risk Assessment Form",
+    "folderName": "KYC Questionnaire",
+    "folderId": "KokR9I4pUPUCqz1L",
+    "documentType": "RISK_ASSESSMENT",
+    "confidential": true
+  },
+  {
+    "templateId": "ZXm2Z4mnxvAwFNYd",
+    "title": "Risk Scoring Summary",
+    "folderName": "KYC Questionnaire",
+    "folderId": "KokR9I4pUPUCqz1L",
+    "documentType": "RISK_SCORE_SUMMARY",
+    "confidential": true
+  },
+  {
+    "templateId": "Lf66aLnnnvyidBL2",
+    "title": "PEP Screening Result",
+    "folderName": "Sanctions Checks",
+    "folderId": "I9bgLt7kwQQiR0K2",
+    "documentType": "PEP_CHECK",
+    "confidential": true
+  },
+  {
+    "templateId": "IGZqbjXAAPtvYAni",
+    "title": "Sanctions Screening Result",
+    "folderName": "Sanctions Checks",
+    "folderId": "I9bgLt7kwQQiR0K2",
+    "documentType": "SANCTIONS_CHECK",
+    "confidential": true
+  },
+  {
+    "templateId": "t3H01TQ3PIdW8IER",
+    "title": "Source of Funds Declaration",
+    "folderName": "AML / Compliance",
+    "folderId": "eBUn3tsxNPZFaAOm",
+    "documentType": "SOURCE_OF_FUNDS",
+    "confidential": true
+  },
+  {
+    "templateId": "70Og9yaDyQ1vTbm8",
+    "title": "Source of Wealth Statement",
+    "folderName": "AML / Compliance",
+    "folderId": "eBUn3tsxNPZFaAOm",
+    "documentType": "SOURCE_OF_WEALTH",
+    "confidential": true
+  },
+  {
+    "templateId": "vCnwNs0PehpVkNkF",
+    "title": "AML Review Report",
+    "folderName": "AML / Compliance",
+    "folderId": "eBUn3tsxNPZFaAOm",
+    "documentType": "AML_REVIEW",
+    "confidential": true
+  },
+  {
+    "templateId": "MpZDw0RogiRgKstT",
+    "title": "Compliance Review",
+    "folderName": "AML / Compliance",
+    "folderId": "eBUn3tsxNPZFaAOm",
+    "documentType": "COMPLIANCE_REVIEW",
+    "confidential": true
+  },
+  {
+    "templateId": "NCAVQbDR3uHLOyyl",
+    "title": "Annual Compliance Report",
+    "folderName": "AML / Compliance",
+    "folderId": "eBUn3tsxNPZFaAOm",
+    "documentType": "ANNUAL_COMPLIANCE_REPORT",
+    "confidential": true
+  },
+  {
+    "templateId": "epgNSW2U7zhB8liA",
+    "title": "Regulatory Correspondence Letter",
+    "folderName": "Certificates and Other Documents",
+    "folderId": "jpAbTFCGgClpYJ2o",
+    "documentType": "REGULATORY_LETTER",
+    "confidential": false
+  },
+  {
+    "templateId": "NuNQbtiuNGzZ8B3B",
+    "title": "Bank Statement",
+    "folderName": "Account Statements",
+    "folderId": "YMHHHhngFnufVmJk",
+    "documentType": "BANK_STATEMENT",
+    "confidential": true
+  },
+  {
+    "templateId": "kp4DOuq04hO4GEO1",
+    "title": "Bank Reference Letter",
+    "folderName": "Account Statements",
+    "folderId": "YMHHHhngFnufVmJk",
+    "documentType": "BANK_REFERENCE_LETTER",
+    "confidential": true
+  },
+  {
+    "templateId": "iVAc3L2OrVUCgEiV",
+    "title": "Tax Return",
+    "folderName": "Tax Residency",
+    "folderId": "bjXhXHTbaxQYm8oR",
+    "documentType": "TAX_RETURN",
+    "confidential": true
+  },
+  {
+    "templateId": "0UEkfiwH3FNvqYmV",
+    "title": "Tax Residency Certificate",
+    "folderName": "Tax Residency",
+    "folderId": "bjXhXHTbaxQYm8oR",
+    "documentType": "TAX_RESIDENCY_CERT",
+    "confidential": true
+  },
+  {
+    "templateId": "81wFdD1wdNcs5ZtT",
+    "title": "Financial Statement",
+    "folderName": "Account Statements",
+    "folderId": "YMHHHhngFnufVmJk",
+    "documentType": "FINANCIAL_STATEMENT",
+    "confidential": true
+  },
+  {
+    "templateId": "O8PHUN4ls367WkVj",
+    "title": "Account Opening Agreement",
+    "folderName": "Master Agreement",
+    "folderId": "3h1FXuDgbAg4ffjz",
+    "documentType": "ACCOUNT_AGREEMENT",
+    "confidential": true
+  },
+  {
+    "templateId": "qqhvTZqvPnBSWq9A",
+    "title": "Terms of Service Agreement",
+    "folderName": "Individual Terms",
+    "folderId": "REkO0HUzARCJuGL7",
+    "documentType": "SERVICE_AGREEMENT",
+    "confidential": false
+  },
+  {
+    "templateId": "BBMHFQmXM2xkHpVt",
+    "title": "Contract Amendment",
+    "folderName": "Individual Terms",
+    "folderId": "REkO0HUzARCJuGL7",
+    "documentType": "CONTRACT_AMENDMENT",
+    "confidential": false
+  },
+  {
+    "templateId": "Ct4cbsxefrPNnb2D",
+    "title": "Client Email Correspondence",
+    "folderName": "Emails",
+    "folderId": "m7rz6AzVqCKGEpRf",
+    "documentType": "CLIENT_EMAIL",
+    "confidential": false
+  },
+  {
+    "templateId": "6I7T463KOg8dNjE6",
+    "title": "Meeting Notes",
+    "folderName": "Client Relations",
+    "folderId": "pbotUuu0oR2HcMmL",
+    "documentType": "MEETING_NOTES",
+    "confidential": false
+  },
+  {
+    "templateId": "9VGg0Jznb4PZW2eZ",
+    "title": "Phone Call Record",
+    "folderName": "Phone Calls",
+    "folderId": "5ybnem4DuPBRIPHw",
+    "documentType": "PHONE_RECORD",
+    "confidential": false
+  },
+  {
+    "templateId": "8yjqw1iXC23uKnLG",
+    "title": "Power of Attorney",
+    "folderName": "Certificates and Other Documents",
+    "folderId": "jpAbTFCGgClpYJ2o",
+    "documentType": "POWER_OF_ATTORNEY",
+    "confidential": true
+  },
+  {
+    "templateId": "xXAtwhlUY13RtH0S",
+    "title": "Court Document",
+    "folderName": "Certificates and Other Documents",
+    "folderId": "jpAbTFCGgClpYJ2o",
+    "documentType": "COURT_DOCUMENT",
+    "confidential": true
+  },
+  {
+    "templateId": "dNWTsoETzmtuHQCp",
+    "title": "Legal Opinion Letter",
+    "folderName": "Certificates and Other Documents",
+    "folderId": "jpAbTFCGgClpYJ2o",
+    "documentType": "LEGAL_OPINION",
+    "confidential": false
+  },
+  {
+    "templateId": "ltQdamT6bp8jpkgl",
+    "title": "Ongoing Monitoring Report",
+    "folderName": "AML / Compliance",
+    "folderId": "eBUn3tsxNPZFaAOm",
+    "documentType": "MONITORING_REPORT",
+    "confidential": true
+  },
+  {
+    "templateId": "uYfPUV6aFX0eA1oG",
+    "title": "Compliance Alert Record",
+    "folderName": "AML / Compliance",
+    "folderId": "eBUn3tsxNPZFaAOm",
+    "documentType": "COMPLIANCE_ALERT",
+    "confidential": true
+  }
+]

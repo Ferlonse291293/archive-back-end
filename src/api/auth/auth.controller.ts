@@ -32,8 +32,9 @@ export const login = async (req: Request, res: Response) => {
 };
 
 export const refresh = async (req: Request, res: Response) => {
-    const result = await refreshService(req.cookies.refreshToken);
 
+    const result = await refreshService(req.cookies.refreshToken);
+    console.log('refresh', result)
     if (!result) {
         return res.status(401).json({
             message: 'Invalid refresh token'

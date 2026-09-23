@@ -6,14 +6,12 @@ import jwt from "jsonwebtoken";
 import crypto from "crypto";
 import bcrypt from "bcryptjs";
 
-const users = JSON.parse(
-    fs.readFileSync('./src/db/users.json', 'utf-8')
-);
 const userPermissions = JSON.parse(
     fs.readFileSync('./src/db/userPermission.json', 'utf-8')
 );
 import { PrismaClient } from '@prisma/client';
 import { PrismaPg } from '@prisma/adapter-pg';
+import {JWT_SECRET_EXPIRES_IN, REFRESH_SECRET_EXPIRES_IN} from "../../shared/const/token.js";
 
 const adapter = new PrismaPg({
     connectionString: String(process.env.DATABASE_URL)
@@ -41,13 +39,13 @@ export const loginService = async ({
     const token = jwt.sign(
         { userId: user.id },
         process.env.JWT_SECRET!,
-        { expiresIn: "15m" }
+        { expiresIn: JWT_SECRET_EXPIRES_IN }
     );
 
     const refreshToken = jwt.sign(
         { userId: user.id },
         process.env.REFRESH_SECRET!,
-        { expiresIn: "7d" }
+        { expiresIn: REFRESH_SECRET_EXPIRES_IN }
     );
 
     return {
@@ -59,28 +57,33 @@ export const loginService = async ({
 export const refreshService = async (
     refreshToken: string
 ) => {
+    console.log('refreshToken exists:', !!refreshToken);
 
-    if (!refreshToken) return null;
+    if (!refreshToken) {
+        return null;
+    }
 
     try {
         const payload = jwt.verify(
             refreshToken,
-            REFRESH_SECRET
-        ) as any;
+            process.env.REFRESH_SECRET!
+        ) as { userId: number };
+
+        console.log('refresh payload:', payload);
 
         const token = jwt.sign(
             { userId: payload.userId },
-            JWT_SECRET,
-            { expiresIn: '15m' }
+            process.env.JWT_SECRET!,
+            { expiresIn: JWT_SECRET_EXPIRES_IN }
         );
 
         return { token };
 
-    } catch {
+    } catch (error) {
+        console.error('REFRESH VERIFY ERROR:', error);
         return null;
     }
 };
-
 export const profileService = async (userId: number) => {
 
     const user  = await prisma.user.findUnique({

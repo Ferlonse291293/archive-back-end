@@ -1,4 +1,5 @@
 import type {IClientIndividualDetail, IClientIndividualListItem} from "./clients.types.js";
+import type {IOption} from "../options/options.types.js";
 
 
 export const buildPaginationMeta = (
@@ -27,13 +28,20 @@ export const formatClientToItem = (client: IClientIndividualDetail):IClientIndiv
             ipn: client.ipn,
             type: client.typeClient,
             passportNumber: client.passportNumber,
-            department: 'POST06',
+            department: formatDepartment(client.department),
             status: "OPEN"
         }
 }
 
 export const flattenClient = (client): IClientIndividualDetail => {
-    const { individual, ...rest } = client;
-    return { ...rest, ...individual };
+
+    const { individual , ...rest } = client;
+    return { ...rest, ...individual};
 }
+
+export const formatDepartment = (department): IOption => {
+    return {name: department.address , code: department.code}
+}
+
+
 

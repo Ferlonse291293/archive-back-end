@@ -1,20 +1,10 @@
-import fs from "fs";
-import type {IDocumentRef, IDocumentTree, IFolderDocument} from "./documents.types.js";
-import {buildTree} from "./documents.utils.js";
+
+import type {IDocumentDto, IDocumentRef} from "./documents.types.js";
+import {buildTree, formatDocument} from "./documents.utils.js";
 import {PrismaPg} from "@prisma/adapter-pg";
 import {PrismaClient} from "@prisma/client";
 
-// const documentsDb = JSON.parse(
-//     fs.readFileSync('./src/db/documents.json', 'utf-8')
-// );
-//
-// const documentsRefDb = JSON.parse(
-//     fs.readFileSync('./src/db/document-references.json', 'utf-8')
-// );
-//
-// const foldersDocumentsDb = JSON.parse(
-//     fs.readFileSync('./src/db/folders-documents.json', 'utf-8')
-// );
+
 
 const adapter = new PrismaPg({
     connectionString: String(process.env.DATABASE_URL)
@@ -24,20 +14,7 @@ const prisma = new PrismaClient({ adapter });
 
 
 
-// export const getDocumentTreeService =
-//     async (clientId: string) => {
-//         const documentsRef: IDocumentRef[]  = [...documentsRefDb]
-//         const foldersDocuments: IFolderDocument[] = [...foldersDocumentsDb]
-//
-//     if(!documentsRef.length ||  !foldersDocuments.length){
-//         return null
-//     }
-//     if(foldersDocuments.length){
-//
-//        return  buildTree(foldersDocuments, documentsRef)
-//     }
-//
-//     };
+
 export const getDocumentTreeService = async (clientId: string) => {
     const folders = await prisma.folder.findMany();
     if (!folders.length) return null;
@@ -72,13 +49,31 @@ export const getDocumentTreeService = async (clientId: string) => {
     return buildTree(folders, documentsRef);
 };
 
-export const getDocumentByIdService = async (documentId: string) => {
-    return prisma.document.findUnique({
+export const getDocumentByIdService = async (documentId: string):Promise<IDocumentDto | null> => {
+
+    if(!documentId) {
+        return null
+    }
+
+   let document = await prisma.document.findUnique({
         where: { id: documentId },
         include: {
             files: { include: { file: true } },
             metadata: true,
-            group: true,
+            group: {
+                include: {
+                    versions: {
+                        include: {
+                            metadata: true,
+                        }},
+                },
+            }
         },
     });
+
+    if(!document) {
+        return null
+    }
+    return formatDocument(document)
 };
+//

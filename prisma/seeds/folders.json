@@ -1,0 +1,177 @@
+[
+  {
+    "id": "T3HCeILFdRL62Ema",
+    "name": "KYC Legal File",
+    "parentFolderId": null
+  },
+  {
+    "id": "DBZb9tdK2fgx4ItD",
+    "name": "Identification",
+    "parentFolderId": "T3HCeILFdRL62Ema"
+  },
+  {
+    "id": "pwbT39PGK20gEf05",
+    "name": "Identification Documents",
+    "parentFolderId": "DBZb9tdK2fgx4ItD"
+  },
+  {
+    "id": "fhksKMeujbQHzmnD",
+    "name": "Passport",
+    "parentFolderId": "pwbT39PGK20gEf05"
+  },
+  {
+    "id": "E0gk4xTwVVsL0B7H",
+    "name": "ID Card",
+    "parentFolderId": "pwbT39PGK20gEf05"
+  },
+  {
+    "id": "8jLu6O9gtXe2f2gu",
+    "name": "International Passport",
+    "parentFolderId": "pwbT39PGK20gEf05"
+  },
+  {
+    "id": "5SrhFJzov9SCrDuI",
+    "name": "Driver License",
+    "parentFolderId": "pwbT39PGK20gEf05"
+  },
+  {
+    "id": "YXh1vg0sQsPzBDWg",
+    "name": "Residence Permit",
+    "parentFolderId": "pwbT39PGK20gEf05"
+  },
+  {
+    "id": "Tadyll2bj3yTfvRJ",
+    "name": "Video Identification",
+    "parentFolderId": "DBZb9tdK2fgx4ItD"
+  },
+  {
+    "id": "dUq1ZjcfWoV8Nf2z",
+    "name": "Address Verification",
+    "parentFolderId": "DBZb9tdK2fgx4ItD"
+  },
+  {
+    "id": "bjXhXHTbaxQYm8oR",
+    "name": "Tax Residency",
+    "parentFolderId": "DBZb9tdK2fgx4ItD"
+  },
+  {
+    "id": "I9bgLt7kwQQiR0K2",
+    "name": "Sanctions Checks",
+    "parentFolderId": "DBZb9tdK2fgx4ItD"
+  },
+  {
+    "id": "iUuJoWPOxdt5U6Ve",
+    "name": "Biometric Data",
+    "parentFolderId": "DBZb9tdK2fgx4ItD"
+  },
+  {
+    "id": "KokR9I4pUPUCqz1L",
+    "name": "KYC Questionnaire",
+    "parentFolderId": "T3HCeILFdRL62Ema"
+  },
+  {
+    "id": "2xn071R6CBcLmMbP",
+    "name": "FATCA / CRS Documents",
+    "parentFolderId": "T3HCeILFdRL62Ema"
+  },
+  {
+    "id": "pbotUuu0oR2HcMmL",
+    "name": "Client Relations",
+    "parentFolderId": "T3HCeILFdRL62Ema"
+  },
+  {
+    "id": "3h1FXuDgbAg4ffjz",
+    "name": "Master Agreement",
+    "parentFolderId": "T3HCeILFdRL62Ema"
+  },
+  {
+    "id": "REkO0HUzARCJuGL7",
+    "name": "Individual Terms",
+    "parentFolderId": "T3HCeILFdRL62Ema"
+  },
+  {
+    "id": "jpAbTFCGgClpYJ2o",
+    "name": "Certificates and Other Documents",
+    "parentFolderId": "T3HCeILFdRL62Ema"
+  },
+  {
+    "id": "y0UotEWo2SoGuqyF",
+    "name": "Client Communications",
+    "parentFolderId": "T3HCeILFdRL62Ema"
+  },
+  {
+    "id": "m7rz6AzVqCKGEpRf",
+    "name": "Emails",
+    "parentFolderId": "y0UotEWo2SoGuqyF"
+  },
+  {
+    "id": "5ybnem4DuPBRIPHw",
+    "name": "Phone Calls",
+    "parentFolderId": "y0UotEWo2SoGuqyF"
+  },
+  {
+    "id": "xA46VhdHGomAYC5F",
+    "name": "Chat History",
+    "parentFolderId": "y0UotEWo2SoGuqyF"
+  },
+  {
+    "id": "eBUn3tsxNPZFaAOm",
+    "name": "AML / Compliance",
+    "parentFolderId": "T3HCeILFdRL62Ema"
+  },
+  {
+    "id": "wIoIz3IYGzJ4Yxug",
+    "name": "Archive",
+    "parentFolderId": "T3HCeILFdRL62Ema"
+  },
+  {
+    "id": "EOjMlElNZtSI8hFj",
+    "name": "Expired Documents",
+    "parentFolderId": "wIoIz3IYGzJ4Yxug"
+  },
+  {
+    "id": "zmdDfiv0Dncg6Pk8",
+    "name": "Revoked Documents",
+    "parentFolderId": "wIoIz3IYGzJ4Yxug"
+  },
+  {
+    "id": "XmtonMsKyHvF8AJ3",
+    "name": "Archived Contracts",
+    "parentFolderId": "wIoIz3IYGzJ4Yxug"
+  },
+  {
+    "id": "d66BMID03vaCeSNc",
+    "name": "Old Passports",
+    "parentFolderId": "wIoIz3IYGzJ4Yxug"
+  },
+  {
+    "id": "ggXvIRQVWCmDmKNL",
+    "name": "Passive Products",
+    "parentFolderId": "T3HCeILFdRL62Ema"
+  },
+  {
+    "id": "Dg52BqFDGjHyfy7N",
+    "name": "Deposits",
+    "parentFolderId": "ggXvIRQVWCmDmKNL"
+  },
+  {
+    "id": "I9dI9pGIScGXoSzv",
+    "name": "Current Accounts",
+    "parentFolderId": "ggXvIRQVWCmDmKNL"
+  },
+  {
+    "id": "YMHHHhngFnufVmJk",
+    "name": "Account Statements",
+    "parentFolderId": "I9dI9pGIScGXoSzv"
+  },
+  {
+    "id": "adFBHxCJVu5gYfsy",
+    "name": "Card Products",
+    "parentFolderId": "ggXvIRQVWCmDmKNL"
+  },
+  {
+    "id": "HgWGcm1gsRB1nz0K",
+    "name": "Interest Accruals",
+    "parentFolderId": "ggXvIRQVWCmDmKNL"
+  }
+]

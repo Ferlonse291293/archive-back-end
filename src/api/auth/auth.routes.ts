@@ -10,7 +10,7 @@ const router = Router();
 
 router.post('/login', login);
 router.post('/logout', logout);
-router.post('/refresh',  authMiddleware, refresh);
+router.post('/refresh',  refresh);
 
 router.get('/profile', authMiddleware, profile);
 
